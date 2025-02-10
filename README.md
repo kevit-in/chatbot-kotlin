@@ -11,7 +11,7 @@
 - In your module's build.gradle file add the below dependency
 
     ```
-    implementation "com.kevit:chatbot-kotlin:1.0.1"
+    implementation "com.kevit:chatbot-kotlin:1.0.2"
     ```
 
 - Sync the project
@@ -37,11 +37,20 @@ In your preferred Activity import the relevant packages as below
             )
     ```
 
+# Initialize User Input (Optional)
+```
+    val userInput = HashMap<String, String>()
+    userInput["email"] = "test@123.io"
+```
+
 # Initialize the ChatBot
     ```
     val model = ChatBotModel(
         "<appId>",
         "<appSecret>",
+        userInput,
+        "<botUrl>",
+        "<socketUrl>",
         botDesign
     )
     ```
