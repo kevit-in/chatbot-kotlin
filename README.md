@@ -11,7 +11,7 @@
 - In your module's build.gradle file add the below dependency
 
     ```
-    implementation "com.kevit:chatbot-kotlin:1.0.2"
+    implementation "com.kevit:chatbot-kotlin:1.0.5"
     ```
 
 - Sync the project
