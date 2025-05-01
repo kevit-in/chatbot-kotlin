@@ -3,6 +3,9 @@
 - To access the sdk add the below to repository to the list of repositories in the root build.gradle file
 
     ```
+    google()
+    mavenCentral()
+    maven { url "https://jitpack.io" }
     maven {
         url "https://arjavdave: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@maven.pkg.github.com/kevit-in/chatbot-kotlin"
     }
@@ -11,7 +14,7 @@
 - In your module's build.gradle file add the below dependency
 
     ```
-    implementation "com.kevit:chatbot-kotlin:1.0.5"
+    implementation "com.kevit:chatbot-kotlin:1.0.6"
     ```
 
 - Sync the project
@@ -20,10 +23,10 @@
 In your preferred Activity import the relevant packages as below
     
     ```
-    import com.kevit.chatbotkotlin.API.ChatBotDesign
-    import com.kevit.chatbotkotlin.API.Style
-    import com.kevit.chatbotkotlin.ChatBot
-    import com.kevit.chatbotkotlin.ChatBotModel
+    import com.kevit.chatbot_lib.API.ChatBotDesign
+    import com.kevit.chatbot_lib.API.Style
+    import com.kevit.chatbot_lib.ChatBot
+    import com.kevit.chatbot_lib.ChatBotModel
     ```
 
 # Initialize bot design (Optional)
